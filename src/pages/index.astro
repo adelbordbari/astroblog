@@ -23,43 +23,20 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Mingalaba</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
+      <h1
+        class="cursor-default hover:text-skin-accent hover:underline hover:decoration-double"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-      </a>
-
-      <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
+        Welcome!
+      </h1>
+      <p class="hello">
+        Hello! This is my blog where I write about the things I do, like or
+        think about.
       </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">Find me on:</div>
             <Socials />
           </div>
         )
@@ -68,6 +45,142 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <Hr />
 
+    <section class="mt-6 mb-12">
+      <h1 class="text-lg font-semibold">
+        Here are some of the things I enjoy:
+      </h1>
+      <br />
+      <ul>
+        <li>
+          <strong>Computers:</strong>
+           I'm a developer by profession and passion. I currently work as a
+          full-stack developer and study as a M.Sc student in Artificial
+          Intelligence. You can find me on
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://www.linkedin.com/in/adel-bordbari/"
+          >
+            LinkedIn
+          </LinkButton>
+           or
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://stackoverflow.com/users/7958330/nitwit"
+          >
+            StackOverflow
+          </LinkButton>.<br /> My current stack includes FastAPI, Django, React
+          and several more. I'm also currently working on a <i>USV/ASV</i>
+           (unmanned/autonomous surface vehicle) project. I spend many hours per
+          day writing and tweaking code.
+        </li>
+        <br />
+
+        <li>
+          <strong>Music:</strong>
+           I listen to music a lot. You can check out my playlist
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://t.me/chemidunambaba"
+          >
+            here
+          </LinkButton> or follow me on
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://www.last.fm/user/thenitwit"
+          >
+            last.fm
+          </LinkButton>
+           and
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://open.spotify.com/user/snhhslm7730g4xp9rg4lwbi9r"
+          >
+            Spotify
+          </LinkButton>. I also play guitar and make music. You can hear my work
+          on my
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://soundcloud.com/thenitwit"
+          >
+            SoundCloud
+          </LinkButton>. <br /> I'm fond of looking into song facts and
+          meanings, you can follow me on
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://genius.com/Nitwit"
+          >
+            Genius
+          </LinkButton> too.
+        </li>
+        <br />
+
+        <li>
+          <strong>Photography:</strong>
+           Shooting photos been a hobby of mine since 2015. I particularly enjoy
+          film photography, architecture, street photography and portraits. You
+          can see my photos on my
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://www.instagram.com/adel_bordbari"
+          >
+            Instagram
+          </LinkButton>.
+        </li>
+        <br />
+
+        <li>
+          <strong>Stories:</strong> I love reading and learning about stories
+          -specially short ones, I particularly enjoy reading <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://en.wikipedia.org/wiki/Shahriar_Mandanipour"
+          >
+            Mandanipour
+          </LinkButton>,
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://en.wikipedia.org/wiki/Sadegh_Hedayat"
+          >
+            Hedayat
+          </LinkButton>, <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://en.wikipedia.org/wiki/Mostafa_Mastoor"
+          >
+            Mastoor
+          </LinkButton> and Dostoevsky. I'm planning to publish my first
+          collection by the end of this year.
+        </li>
+        <br />
+
+        <li>
+          <strong>Philosophy:</strong> I like reading about existentialism,
+          stoicism, aesthetics and history of philosophy. I enjoy learning about
+          Nietzsche, Camus, Seneca and Spinoza.
+        </li>
+        <br />
+
+        <li>
+          <strong>Films:</strong> I'm interested in cinema and I watch a lot of
+          movies. You can follow me on
+          <LinkButton
+            className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+            href="https://letterboxd.com/adel_bordbari/"
+          >
+            letterboxd
+          </LinkButton>
+        </li>
+        <br />
+
+        <li>
+          <strong>Geography:</strong>
+           I like maps, flags, urban planning, and geopolitics. On my first days
+          on the internet (using a dial-up model and a CRT monitor) I discovered
+          Google Earth and later Google Maps. I used to zoom in and out enitre
+          evenings.
+        </li>
+      </ul>
+    </section>
+
+    <Hr />
     {
       featuredPosts.length > 0 && (
         <>
